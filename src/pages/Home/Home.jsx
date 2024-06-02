@@ -6,6 +6,7 @@ import hero_title from '../../assets/hero_title.png'
 import play_icon from '../../assets/play_icon.png'
 import info_icon from '../../assets/info_icon.png'
 import TitleCards from '../../components/TitleCards/TitleCards.jsx'
+import Footer from '../../components/Footer/Footer.jsx'
 
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
         <img src={hero_banner} alt='' className='banner-img'/>
         <div className="hero-caption">
           <img src={hero_title} alt='' className='caption-img'/>
-          <p>Discoverign the new challanges and the discoveries ,
+          <p>Discovering the new challanges and the discoveries ,
             of the mountains and facing the new adversities with the each new step</p>
             <div className="hero-btns">
               <button className='btn '><img src={play_icon} alt=''/>Play</button>
@@ -24,7 +25,16 @@ const Home = () => {
             </div>
             <TitleCards/>
         </div>
+      </div>  
+
+      <div className="more-cards">
+        <TitleCards title={"BlockBuster Movies"}/>
+        <TitleCards title={"Hollywood Movies"}/>
+        <TitleCards title={"Bollywood Movies"}/>
+        <TitleCards title={"Action movies"}/>
       </div>
+    <Footer/>
+        
     </div>
   )
 }
